@@ -70,7 +70,7 @@
             this.txt_TC.Multiline = true;
             this.txt_TC.Name = "txt_TC";
             this.txt_TC.Size = new System.Drawing.Size(182, 24);
-            this.txt_TC.TabIndex = 2;
+            this.txt_TC.TabIndex = 0;
             // 
             // label2
             // 
@@ -90,7 +90,7 @@
             this.txt_Password.Multiline = true;
             this.txt_Password.Name = "txt_Password";
             this.txt_Password.Size = new System.Drawing.Size(182, 24);
-            this.txt_Password.TabIndex = 2;
+            this.txt_Password.TabIndex = 1;
             // 
             // label3
             // 
@@ -112,7 +112,7 @@
             this.btn_Login.Location = new System.Drawing.Point(585, 511);
             this.btn_Login.Name = "btn_Login";
             this.btn_Login.Size = new System.Drawing.Size(182, 58);
-            this.btn_Login.TabIndex = 4;
+            this.btn_Login.TabIndex = 3;
             this.btn_Login.Text = "Login";
             this.btn_Login.UseVisualStyleBackColor = false;
             // 
@@ -125,7 +125,7 @@
             this.linl_login.Location = new System.Drawing.Point(599, 479);
             this.linl_login.Name = "linl_login";
             this.linl_login.Size = new System.Drawing.Size(159, 15);
-            this.linl_login.TabIndex = 5;
+            this.linl_login.TabIndex = 2;
             this.linl_login.TabStop = true;
             this.linl_login.Text = "Don\'t you have an account?";
             // 
@@ -145,6 +145,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "frmUserlogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login Page - Stock Control Application";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
