@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace Stock_Control_Application
 {
-    public partial class Form1 : Form
+    public partial class frmUserlogin : Form
     {
 
-        public Form1()
+        public frmUserlogin()
         {
             InitializeComponent();
         }

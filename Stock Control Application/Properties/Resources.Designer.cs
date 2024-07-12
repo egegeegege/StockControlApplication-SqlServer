@@ -63,6 +63,16 @@ namespace Stock_Control_Application.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1675415372_gas_kvas_com_p_priroda_fonovii_risunok_13 {
+            get {
+                object obj = ResourceManager.GetObject("1675415372_gas-kvas-com-p-priroda-fonovii-risunok-13", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _258_2582267_circled_user_male_skin_type_1_2_icon_male_user_icon {
             get {
                 object obj = ResourceManager.GetObject("258-2582267_circled-user-male-skin-type-1-2-icon-male-user-icon", resourceCulture);
