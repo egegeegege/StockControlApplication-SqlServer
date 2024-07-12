@@ -115,6 +115,7 @@
             this.btn_Login.TabIndex = 3;
             this.btn_Login.Text = "Login";
             this.btn_Login.UseVisualStyleBackColor = false;
+            this.btn_Login.Click += new System.EventHandler(this.btn_Login_Click);
             // 
             // linl_login
             // 
@@ -128,6 +129,7 @@
             this.linl_login.TabIndex = 2;
             this.linl_login.TabStop = true;
             this.linl_login.Text = "Don\'t you have an account?";
+            this.linl_login.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linl_login_LinkClicked);
             // 
             // frmUserlogin
             // 
