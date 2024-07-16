@@ -31,6 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cmb_category = new System.Windows.Forms.ComboBox();
             this.btn_ımage = new System.Windows.Forms.Button();
             this.btn_addproduct = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -46,8 +47,7 @@
             this.txt_supplier = new System.Windows.Forms.TextBox();
             this.txt_product = new System.Windows.Forms.TextBox();
             this.PB_ = new System.Windows.Forms.PictureBox();
-            this.cmb_category = new System.Windows.Forms.ComboBox();
-            this.cmb_qantity = new System.Windows.Forms.ComboBox();
+            this.txt_qantity = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PB_)).BeginInit();
@@ -79,11 +79,11 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel1.Controls.Add(this.cmb_qantity);
             this.panel1.Controls.Add(this.cmb_category);
             this.panel1.Controls.Add(this.btn_ımage);
             this.panel1.Controls.Add(this.btn_addproduct);
             this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.txt_qantity);
             this.panel1.Controls.Add(this.txt_price);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
@@ -99,6 +99,44 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(438, 524);
             this.panel1.TabIndex = 4;
+            // 
+            // cmb_category
+            // 
+            this.cmb_category.FormattingEnabled = true;
+            this.cmb_category.Items.AddRange(new object[] {
+            "Electronics",
+            "",
+            "Furniture",
+            "",
+            "Clothing and Apparel",
+            "",
+            "Food and Beverage",
+            "",
+            "Pharmaceuticals",
+            "",
+            "Automotive Parts",
+            "",
+            "Industrial Equipment",
+            "",
+            "Household Goods",
+            "",
+            "Cosmetics and Personal Care",
+            "",
+            "Building Materials",
+            "",
+            "Toys and Games",
+            "",
+            "Office Supplies",
+            "",
+            "Agricultural Products",
+            "",
+            "Textiles and Fabrics",
+            "",
+            "Medical Equipment"});
+            this.cmb_category.Location = new System.Drawing.Point(68, 156);
+            this.cmb_category.Name = "cmb_category";
+            this.cmb_category.Size = new System.Drawing.Size(130, 21);
+            this.cmb_category.TabIndex = 5;
             // 
             // btn_ımage
             // 
@@ -223,66 +261,19 @@
             // PB_
             // 
             this.PB_.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_.Location = new System.Drawing.Point(50, 117);
+            this.PB_.Location = new System.Drawing.Point(60, 116);
             this.PB_.Name = "PB_";
-            this.PB_.Size = new System.Drawing.Size(296, 173);
+            this.PB_.Size = new System.Drawing.Size(277, 295);
+            this.PB_.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PB_.TabIndex = 5;
             this.PB_.TabStop = false;
             // 
-            // cmb_category
+            // txt_qantity
             // 
-            this.cmb_category.FormattingEnabled = true;
-            this.cmb_category.Items.AddRange(new object[] {
-            "Electronics",
-            "",
-            "Furniture",
-            "",
-            "Clothing and Apparel",
-            "",
-            "Food and Beverage",
-            "",
-            "Pharmaceuticals",
-            "",
-            "Automotive Parts",
-            "",
-            "Industrial Equipment",
-            "",
-            "Household Goods",
-            "",
-            "Cosmetics and Personal Care",
-            "",
-            "Building Materials",
-            "",
-            "Toys and Games",
-            "",
-            "Office Supplies",
-            "",
-            "Agricultural Products",
-            "",
-            "Textiles and Fabrics",
-            "",
-            "Medical Equipment"});
-            this.cmb_category.Location = new System.Drawing.Point(68, 156);
-            this.cmb_category.Name = "cmb_category";
-            this.cmb_category.Size = new System.Drawing.Size(130, 21);
-            this.cmb_category.TabIndex = 5;
-            // 
-            // cmb_qantity
-            // 
-            this.cmb_qantity.FormattingEnabled = true;
-            this.cmb_qantity.Items.AddRange(new object[] {
-            "Between 0 and 100 units",
-            "Between 501and 1000 units",
-            "Between 1001 and 3000 units",
-            "Between 3001 and 6000 units",
-            "Between 6001 and 15000 units",
-            "Between 15001 and 30000 units",
-            "Between 30001 and 65000 units",
-            "Between 65001 and 100000 units"});
-            this.cmb_qantity.Location = new System.Drawing.Point(68, 208);
-            this.cmb_qantity.Name = "cmb_qantity";
-            this.cmb_qantity.Size = new System.Drawing.Size(130, 21);
-            this.cmb_qantity.TabIndex = 5;
+            this.txt_qantity.Location = new System.Drawing.Point(68, 208);
+            this.txt_qantity.Name = "txt_qantity";
+            this.txt_qantity.Size = new System.Drawing.Size(130, 20);
+            this.txt_qantity.TabIndex = 2;
             // 
             // frmAddProduct
             // 
@@ -326,6 +317,6 @@
         private System.Windows.Forms.Button btn_addproduct;
         private System.Windows.Forms.PictureBox PB_;
         private System.Windows.Forms.ComboBox cmb_category;
-        private System.Windows.Forms.ComboBox cmb_qantity;
+        private System.Windows.Forms.TextBox txt_qantity;
     }
 }

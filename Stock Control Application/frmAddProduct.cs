@@ -46,7 +46,7 @@ namespace Stock_Control_Application
             {
                 ProductName = txt_product.Text,
                 Category = cmb_category.Text,
-                Quantity = (int)Convert.ToUInt32(cmb_qantity.Text),
+                Quantity = (int)Convert.ToUInt32(txt_qantity.Text),
                 Supplier = txt_supplier.Text,
                 Description = txt_description.Text,
                 Price = (int)Convert.ToUInt32(txt_price.Text),
