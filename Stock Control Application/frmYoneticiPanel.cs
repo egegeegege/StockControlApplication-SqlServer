@@ -24,5 +24,11 @@ namespace Stock_Control_Application
             frmAddProduct frmAddProduct = new frmAddProduct();
             frmAddProduct.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmProductsList frmProductsList = new frmProductsList();
+            frmProductsList.Show();
+        }
     }
 }

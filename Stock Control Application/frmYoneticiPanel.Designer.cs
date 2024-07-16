@@ -48,7 +48,7 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(-2, -2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1007, 55);
+            this.panel1.Size = new System.Drawing.Size(1007, 60);
             this.panel1.TabIndex = 0;
             // 
             // button3
@@ -58,7 +58,7 @@
             this.button3.ForeColor = System.Drawing.Color.Gray;
             this.button3.Location = new System.Drawing.Point(793, 0);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(144, 55);
+            this.button3.Size = new System.Drawing.Size(144, 60);
             this.button3.TabIndex = 4;
             this.button3.Text = "Sells";
             this.button3.UseVisualStyleBackColor = false;
@@ -70,10 +70,11 @@
             this.button2.ForeColor = System.Drawing.Color.Gray;
             this.button2.Location = new System.Drawing.Point(651, 0);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(144, 55);
+            this.button2.Size = new System.Drawing.Size(144, 60);
             this.button2.TabIndex = 4;
             this.button2.Text = "Products";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btn_product
             // 
@@ -82,7 +83,7 @@
             this.btn_product.ForeColor = System.Drawing.Color.Gray;
             this.btn_product.Location = new System.Drawing.Point(508, 0);
             this.btn_product.Name = "btn_product";
-            this.btn_product.Size = new System.Drawing.Size(144, 55);
+            this.btn_product.Size = new System.Drawing.Size(144, 60);
             this.btn_product.TabIndex = 4;
             this.btn_product.Text = "Add Product";
             this.btn_product.UseVisualStyleBackColor = false;
@@ -93,7 +94,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Rockwell Extra Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.label1.Location = new System.Drawing.Point(86, 17);
+            this.label1.Location = new System.Drawing.Point(80, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(147, 22);
             this.label1.TabIndex = 3;
@@ -104,7 +105,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::Stock_Control_Application.Properties.Resources.pngwing_com__11_;
             this.pictureBox1.Image = global::Stock_Control_Application.Properties.Resources.pngwing_com__11_;
-            this.pictureBox1.Location = new System.Drawing.Point(28, 6);
+            this.pictureBox1.Location = new System.Drawing.Point(22, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(52, 44);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

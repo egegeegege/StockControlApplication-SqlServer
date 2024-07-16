@@ -62,6 +62,18 @@
     <Compile Include="frmAddProduct.Designer.cs">
       <DependentUpon>frmAddProduct.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmListDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListDetail.Designer.cs">
+      <DependentUpon>frmListDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductsList.Designer.cs">
+      <DependentUpon>frmProductsList.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSignup.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +106,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmAddProduct.resx">
       <DependentUpon>frmAddProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProductsList.resx">
+      <DependentUpon>frmProductsList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSignup.resx">
       <DependentUpon>frmSignup.cs</DependentUpon>
