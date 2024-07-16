@@ -18,5 +18,11 @@ namespace Stock_Control_Application
         {
             InitializeComponent();
         }
+
+        private void btn_product_Click(object sender, EventArgs e)
+        {
+            frmAddProduct frmAddProduct = new frmAddProduct();
+            frmAddProduct.Show();
+        }
     }
 }

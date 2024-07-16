@@ -37,7 +37,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btn_Login = new System.Windows.Forms.Button();
             this.linl_login = new System.Windows.Forms.LinkLabel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -131,6 +134,30 @@
             this.linl_login.Text = "Don\'t you have an account?";
             this.linl_login.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linl_login_LinkClicked);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Rockwell Extra Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.label4.Location = new System.Drawing.Point(80, 23);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(147, 22);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "EA Logistics";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.BackgroundImage = global::Stock_Control_Application.Properties.Resources.pngwing_com__11_;
+            this.pictureBox2.Image = global::Stock_Control_Application.Properties.Resources.pngwing_com__11_;
+            this.pictureBox2.Location = new System.Drawing.Point(22, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(52, 44);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
+            // 
             // frmUserlogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -138,6 +165,8 @@
             this.BackgroundImage = global::Stock_Control_Application.Properties.Resources._1675415372_gas_kvas_com_p_priroda_fonovii_risunok_13;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1316, 746);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.linl_login);
             this.Controls.Add(this.btn_Login);
             this.Controls.Add(this.label3);
@@ -150,6 +179,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login Page - Stock Control Application";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -165,6 +195,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btn_Login;
         private System.Windows.Forms.LinkLabel linl_login;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

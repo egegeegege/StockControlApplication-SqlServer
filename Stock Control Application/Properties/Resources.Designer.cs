@@ -73,6 +73,16 @@ namespace Stock_Control_Application.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _200_2004330_bespoke_supply_chain_solutions_to_meet_all_your_needs_logistica {
+            get {
+                object obj = ResourceManager.GetObject("200-2004330_bespoke-supply-chain-solutions-to-meet-all-your-needs-logistica", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _258_2582267_circled_user_male_skin_type_1_2_icon_male_user_icon {
             get {
                 object obj = ResourceManager.GetObject("258-2582267_circled-user-male-skin-type-1-2-icon-male-user-icon", resourceCulture);

@@ -55,6 +55,7 @@ namespace Stock_Control_Application
                     Password = txt_Password.Text,
                     Email = txt_email.Text,
                     Sifre ="1",
+                    AktifMi = true
                 };
 
                 DataBase.Users.Add(user);

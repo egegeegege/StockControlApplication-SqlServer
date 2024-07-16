@@ -14,13 +14,13 @@ namespace Stock_Control_Application.Orm.Entity
         [Required]
         public string Category { get; set; }
         [Required]
-        public int Quantity { get; set; }
+        public int Quantity { get; set; } //miktar
         [Required]
         public decimal Price { get; set; }
         [Required]
-        public string Supplier { get; set; }
+        public string Supplier { get; set; } //tedarikçi
         [Required]
-        public string Description { get; set; }
+        public string Description { get; set; } //tanım
         public string ImageUrl { get; set; }
 
         List<User> Users = new List<User>();
