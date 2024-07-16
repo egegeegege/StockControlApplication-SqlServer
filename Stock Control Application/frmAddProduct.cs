@@ -68,5 +68,10 @@ namespace Stock_Control_Application
                 return Convert.ToBase64String(imageBytes);
             }
         }
+
+        private void frmAddProduct_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

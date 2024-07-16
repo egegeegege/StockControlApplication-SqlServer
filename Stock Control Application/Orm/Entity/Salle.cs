@@ -9,7 +9,7 @@ namespace Stock_Control_Application.Orm.Entity
     public class Salle : BaseEntity
     {
         public int ProductID { get; set; }
-        public int UserID { get; set; }
+        public int UserID { get; set; } 
 
         public virtual Product Product { get; set; }
         public virtual User User { get; set; }

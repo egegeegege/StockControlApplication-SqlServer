@@ -35,6 +35,7 @@
             this.btn_ımage = new System.Windows.Forms.Button();
             this.btn_addproduct = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
+            this.txt_qantity = new System.Windows.Forms.TextBox();
             this.txt_price = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -47,7 +48,6 @@
             this.txt_supplier = new System.Windows.Forms.TextBox();
             this.txt_product = new System.Windows.Forms.TextBox();
             this.PB_ = new System.Windows.Forms.PictureBox();
-            this.txt_qantity = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PB_)).BeginInit();
@@ -158,6 +158,13 @@
             this.label5.TabIndex = 3;
             this.label5.Text = "Price";
             // 
+            // txt_qantity
+            // 
+            this.txt_qantity.Location = new System.Drawing.Point(68, 224);
+            this.txt_qantity.Name = "txt_qantity";
+            this.txt_qantity.Size = new System.Drawing.Size(130, 20);
+            this.txt_qantity.TabIndex = 2;
+            // 
             // txt_price
             // 
             this.txt_price.Location = new System.Drawing.Point(271, 224);
@@ -257,13 +264,6 @@
             this.PB_.TabIndex = 5;
             this.PB_.TabStop = false;
             // 
-            // txt_qantity
-            // 
-            this.txt_qantity.Location = new System.Drawing.Point(68, 224);
-            this.txt_qantity.Name = "txt_qantity";
-            this.txt_qantity.Size = new System.Drawing.Size(130, 20);
-            this.txt_qantity.TabIndex = 2;
-            // 
             // frmAddProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -276,6 +276,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "frmAddProduct";
             this.Text = "frmAddProduct";
+            this.Load += new System.EventHandler(this.frmAddProduct_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
