@@ -17,6 +17,7 @@ namespace Stock_Control_Application
     {
         public int id;
         public string base64Image;
+        public int kid;
 
         ProjectDbContext db = new ProjectDbContext();
 
@@ -59,34 +60,38 @@ namespace Stock_Control_Application
 
         private void btn_Sell_Click(object sender, EventArgs e)
         {
-            Product arabaVarmi = db.Products.Where(a => a.ID == id && a.AktifMi == true).FirstOrDefault();
-            Product arabalar = db.Products.Where(a => a.ID == id).FirstOrDefault();
+            List<Salle> salles = new List<Salle>();
+            salles = db.Salles.ToList();
+            bool urunsatılık = false;
 
-            if (arabaVarmi != null)
+            foreach (Salle salle in salles)
             {
-                MessageBox.Show("Seçtiğiniz araba şuan kiralık durumda");
+                if (salle.ProductID == id)
+                {
+                    urunsatılık = true;
+                }
+            }
+
+            if (urunsatılık)
+            {
+                MessageBox.Show("bu id ye ait satılmış bir ürün zaten var");
             }
             else
             {
-                Salle salles = new Salle
+                Salle salle = new Salle()
                 {
                     ProductID = id,
-                    AktifMi = false,
-                    AddDate = DateTime.Now,
                     AlisTarihi = DateTime.Now,
+                    AktifMi = true,    
                     TeslimTarihi = DateTime.Now,
-                    UserID = id, //hata burada 
+                    UserID = int.Parse(kid),
                 };
 
-                arabalar.AktifMi = true;
-                db.Salles.Add(salles);
+                db.Salles.Add(salle);
                 db.SaveChanges();
-                MessageBox.Show("Araç Kiralandı");
+                MessageBox.Show("ürün başarıyla satın alınmıştır");
                 this.Hide();
             }
         }
-
-
-       
     }
 }
